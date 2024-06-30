@@ -2,13 +2,13 @@
 
 namespace Egulias\EmailValidator\Warning;
 
-class DomainLiteral extends Warning
+class IPV6ColonEnd extends Warning
 {
-    public const CODE = 70;
+    public const CODE = 77;
 
     public function __construct()
     {
-        $this->message = 'Domain Literal';
+        $this->message = ':: found at the end of the domain literal';
         $this->rfcNumber = 5322;
     }
 }

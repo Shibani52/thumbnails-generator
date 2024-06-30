@@ -2,13 +2,13 @@
 
 namespace Egulias\EmailValidator\Warning;
 
-class DomainLiteral extends Warning
+class IPV6BadChar extends Warning
 {
-    public const CODE = 70;
+    public const CODE = 74;
 
     public function __construct()
     {
-        $this->message = 'Domain Literal';
+        $this->message = 'Bad char in IPV6 domain literal';
         $this->rfcNumber = 5322;
     }
 }
